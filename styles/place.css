@@ -1,0 +1,212 @@
+:root {
+
+    /* change the values below to your colors from your palette */
+    /* CSS HEX */
+    /* CSS HEX */
+    --seasalt: rgb(234, 241, 247);
+    --white: rgb(247, 251, 255);
+    --gold: rgb(179, 159, 85);
+    --free-whitergb:(54, 110, 80);
+    --clear: rgb(56, 100, 84);
+    --bark-green: #6c757dff;
+    --outer-space: rgb(56, 100, 84);
+    --gray-dream: rgb(97, 100, 103);
+    --dark-sea: rgb(22, 40, 58);
+
+    /* Palette Color image*/
+
+    /* CSS HEX */
+    --light-green: rgb(24, 174, 29);
+    --dark-green: rgb(34, 105, 53);
+    --dark-grass: rgb(36, 103, 8);
+    --clear-green: rgb(107, 174, 125);
+    --sky-blue: rgb(73, 134, 152);
+
+    /* CSS HEX */
+    --yellow-green: rgb(233, 247, 220);
+    --sky-pink: rgb(232, 180, 234);
+    --sky-purple: rgb(144, 118, 199);
+    --dark-green: rgb(41, 71, 33);
+    --bright-yellow: rgb(228, 203, 150);
+
+
+
+    /* change the values below to your chosen font(s) */
+    --gothic-regular: "Gothic", sans-serif;
+    --gothic-regular-weight: 390;
+    --gothic-thin: "Gothic", sans-serif;
+    --gothic-thin-weight: 100;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(--primary-color);
+    /* headlines on a white background */
+    --headline-color-on-color: var(--accent3-color);
+    /* headlines on a colored background */
+    --paragraph-color-on-white: var(--primary-color);
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: var(--accent3-color);
+    /* paragraph text on a colored background */
+    --paragraph-background-color: var(--secondary-color);
+    --nav-link-color: var(--accent3-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--primary-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body 
+
+{
+    font-family: var(--gothic);
+    box-sizing: border-box;
+}
+
+
+h1 
+
+{
+    font-size: 2rem;
+}
+
+
+h2 
+
+{
+    font-size: 1.5rem;
+    padding-bottom: 18px
+}
+
+
+h2,
+h1 
+
+{
+    margin: 0%;
+}
+
+
+table 
+
+{
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1rem;
+}
+
+
+.weather table 
+
+{
+    padding: 22px 0;
+}
+
+
+td 
+
+{
+    padding: 4px 4px;
+}
+
+
+td.label 
+
+{
+    text-align: right;
+}
+
+
+.container 
+
+{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 2fr auto auto;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header 
+
+{
+    padding: 18px;
+    text-align: center;
+}
+
+.beach-section 
+
+{
+    grid-row: 1;
+    background-color: var(--clear);
+    padding-top: 18px;
+}
+
+.hero img 
+
+{
+    width: 100%;
+    height: auto;
+    mask-image: linear-gradient(#67171Fff 94%,
+    transparent);
+}
+
+.data,
+.weather 
+
+{
+    padding-top: 22px;
+}
+
+
+.data 
+
+{
+    grid-row: 2;
+
+}
+
+
+.weather-icon 
+
+{
+    display: none;
+}
+
+
+.weather 
+
+{
+    grid-row: 3;
+    margin-bottom: 48px;
+}
+
+
+.weather img 
+
+{
+    width: 12%;
+    height: auto;
+}
+
+
+header,
+footer 
+
+{
+    background-color: var(--clear);
+    color: var(--gold);
+}
+
+
+footer 
+
+{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 1rem;
+}
