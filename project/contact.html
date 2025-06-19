@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+
+    <meta name="description" content="Review Form">
+    <meta name="keywords" content="Review Form">
+    <meta name="author" content="Corbin Van Scheltema">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../project/styles/style.css">
+    <link rel="stylesheet" href="../project/styles/style-large.css">
+    <link rel="stylesheet" href="../project/styles/contact.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../project/images/logo.webp" alt="Logo CVS" width="320"
+            height="340">
+        <button id="menu"></button>
+
+        <nav class="navigation">
+            <a  href="../project/index.html">Home</a>
+            <a href="../project/projects.html">Projects</a>
+            <a href="../project/contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main class="container-contact">
+        <section class="contact-box">
+            <div class="image-container">
+                <img src="../project/images/logos/team.webp" alt="Team Image">
+            </div>
+
+            <div class="form-container">
+                <form action="../project/my-handling-form-page" method="post">
+                    <h1>Contact us</h1>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" required />
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" required />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message" required></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+            <div class="final-contact">
+                <h3>Websites To Your Request</h3>
+                <p>Bring your project no matter how big or small!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear">2025</span> - Corbin Van Scheltema - South Africa</p>
+        <p id="lastModified">Last Modified: </p>
+
+        <div class="social">
+            <a href="https://github.com/user13356" target="_blank" title="GitHub"><img class="icon github-logo"
+                    src="../project/images/logos/github.png" alt="GitHub icon" /></a>
+            <a href="https://x.com/#" target="_blank" title="X"><img class="icon x-logo"
+                    src="../project/images/logos/logo-x.png" alt="X logo" /></a>
+            <a href="https://www.linkedin.com/in/cvans" target="_blank" title="LinkedIn"><img
+                    class="icon linkedin-logo" src="../project/images/logos/linkedin.png"
+                    alt="LinkedIn icon" /></a>
+        </div>
+
+    </footer>
+
+    <script src="../project/scripts/base.js" defer></script>
+
+</body>
+
+
+</html>

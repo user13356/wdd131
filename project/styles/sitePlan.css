@@ -1,0 +1,61 @@
+:root {
+    /* Color for CSS HEX */
+
+    --green: rgb(33, 118, 61);
+    --dark-green: rgb(40, 93, 81);
+    --dark-blue: rgb(0, 77, 149);
+    --sea-green: rgb(20, 159, 169);
+    --light-green: rgb(223, 233, 220);
+
+    --gothic-regular-font-family: "Gothic", sans-serif;
+    --gothic-regular-font-weight: 390;
+    --gothic-regular-font-style: normal;
+
+
+
+}
+
+body {
+    font-family: 'Gothic', Carrois, serif;
+    display: grid;
+    place-items: center;
+
+}
+
+h2 {
+    color: var(--dark-green);
+}
+
+p {
+    color: var(--green);
+}
+
+
+.titleEx,
+.paragraphEx {
+    font-family: var(--gothic-regular-font-family);
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.headfoot {
+    font-family: var(--gothic-regular-font-family);
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.headerEx,
+.footerEx {
+    width: 190px;
+    height: 28px;
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    text-align: center;
+}
+
+img {
+    width: 25%;
+}

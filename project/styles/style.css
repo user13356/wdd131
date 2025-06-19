@@ -1,0 +1,186 @@
+:root {
+    /* CSS HEX */
+    --mindaro: #d9ed92ff;
+    --light-green: #b5e48cff;
+    --light-green-2: #99d98cff;
+    --emerald: #76c893ff;
+    --keppel: #52b69aff;
+    --verdigris: #34a0a4ff;
+    --bondi-blue: #168aadff;
+    --cerulean: #1a759fff;
+    --lapis-lazuli: #1e6091ff;
+    --indigo-dye: rgb(141, 214, 131);
+    /* CSS HEX */
+   
+    --green: rgb(33, 118, 61);
+    --dark-green: rgb(40, 93, 81);
+    --dark-blue: rgb(0, 77, 149);
+    --sea-green: rgb(20, 159, 169);
+    --light-green: rgb(223, 233, 220);
+
+    --gothic-regular-font-family: "Gothic", sans-serif;
+    --gothic-regular-font-weight: 390;
+    --gothic-regular-font-style: normal;
+
+    /* Backgroung color*/
+    --b-on-white: var(--green);
+    --b-on-color: var(--dark-blue);
+    --b-strong-color: var(--green);
+    --b-header-footer: var(--green);
+
+    /* font-color*/
+    --fc-on-white: var(--dark-green);
+    --fc-on-color: var(--green);
+
+
+    --nav-background-color: var(--light-green);
+    --nav-link-color: var(--light-green);
+
+    --font-header-footer-color-on-backgraundcolor: var(--dark-green);
+}
+
+/* General Information */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5 {
+    font-family: var(--gothic-regular-font-family);
+}
+
+p {
+    font-family: var(--gothic-regular-font-family);
+}
+
+/* Header */
+header {
+    background-color: var(--dark-green);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-size: 2.5rem;
+    max-width: 100%;
+}
+
+header img {
+    width: 120px;
+    height: 120px;
+}
+
+#menu {
+    font-size: 2rem;
+    color: var(--light-green);
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid var(--light-green);
+    font-size: 32px;
+    width: 52px;
+    height: 52px;
+}
+
+#menu::before {
+    content: "≡";
+
+}
+
+#menu.open::before {
+    content: "❎";
+    font-size: 24px;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 720px;
+    height: auto;
+}
+
+/* Navigation */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 10px;
+    margin-right: 39px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    color: var(--light-green);
+    font-family: var(--gothic-regular-font-family);
+}
+
+
+.navigation a:hover {
+    font-weight: bold;
+    text-decoration: underline 2px solid var(--light-green);
+    transition: all 0.4s ease-in-out;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+
+.navigation a:hover {
+    transition: all 0.4s ease-in-out;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--light-green);
+    color: var(--fc-on-white);
+    text-align: center;
+    padding: 22px 0;
+    margin-top: 22px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 22px;
+}
+
+footer .icon {
+    width: 52px;
+    height: 52px;
+    transition: transform 0.4s ease;
+}
+
+footer .icon:hover {
+    transform: scale(1.1);
+}
